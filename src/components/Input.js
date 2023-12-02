@@ -41,7 +41,7 @@ const Input = ({ setWeather }) => {
       };
       fetchWeather();
     }
-  }, [coords.lat, coords.lng]);
+  }, [coords.lat, coords.lng, setWeather]);
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       fetchCoords(cityInput);
